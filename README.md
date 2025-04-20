@@ -27,6 +27,8 @@ Some miscellaneous readings:
 2. What is the essence of dynamic programming?  
    Many CS students are familiar with dynamic programming as a technique for solving problems in competitive programming contests.  
    However, dynamic programming should be considered a method in the context of optimization, i.e. it is used to solve optimization problems, similar to linear programming.
+3. What are Online and Offline RL?  
+   In what ways does Offline RL differ from other data-driven learning approaches, such as supervised and unsupervised learning?
 
 ### Topics, keywords, etc.
 
@@ -40,4 +42,11 @@ Some miscellaneous readings:
    If we fix the policy 𝜋 (which determines how actions are chosen based on states), then MDP reduces to MRP.  
    Now, we need to find the best MRP, i.e. optimize the MDP: Bellman equation, dynamic programming.
    
-2. Model-free approaches
+2. Model-free approaches:
+
+   - Monte Carlo policy.
+   - ***Temporal difference.***
+   - SARSA.
+   - Q-learning.
+  
+   Among the four methods mentioned above, temporal difference (TD) is considered the most important one (I'm not entirely sure, but I remember the speaker mentioning that Prof. Sutton said so).
