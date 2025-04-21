@@ -29,6 +29,8 @@ Some miscellaneous readings:
    However, dynamic programming should be considered a method in the context of optimization, i.e. it is used to solve optimization problems, similar to linear programming.
 3. What are Online and Offline RL?  
    In what ways does Offline RL differ from other data-driven learning approaches, such as supervised and unsupervised learning?
+4. What is a metric space?
+5. Deep Q-Network (DQN) for Atari Games: How to optimize the policy 𝜋? What is Experience Replay and how to exploit it to train RL?
 
 ### Topics, keywords, etc.
 
@@ -50,3 +52,27 @@ Some miscellaneous readings:
    - Q-learning.
   
    Among the four methods mentioned above, temporal difference (TD) is considered the most important one (I'm not entirely sure, but I remember the speaker mentioning that Prof. Sutton said so).
+
+3. Function approximation:
+
+   The state-value function $V^\pi(s)$ is the expected discounted return starting with state $s$ and successively following policy $\pi$.  
+   The action-value function $Q^\pi(s, a)$ is the expected discounted return associated with first taking action $a$ in state $s$ and following policy $\pi$.
+
+   Some problems:
+   - Large state / action space.
+   - Defining a policy $\pi$ as a table is hard (lack of memory, cannot visit every state or state-action pair, etc.).
+
+   → approximation:  
+   $V^\pi(s) \approx \hat{v}(s, w)$  
+   $Q^\pi(s, a) \approx \hat{q}(s, a, w)$  
+   where $w$ is a parameter vector characterizing the policy $\pi$.
+
+   Some function approximators:
+   - linear combinations of features.
+   - neural networks.
+   - decision trees.
+   - nearest neighbors.
+   - fourier / wavelet bases.
+   - ...
+
+   However, sigmoid is not used because of the vanishing gradient problem.
