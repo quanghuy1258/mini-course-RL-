@@ -35,7 +35,7 @@ Some miscellaneous readings:
 ### Topics, keywords, etc.
 
 1. Markov decision process (MDP): might be the simplest model for describing systems that involve states, actions, and rewards.
-   
+
    To put it simply: MDP = Markov reward process (MRP) + actions,  
    where a MRP simply extends a Markov chain by assigning a reward to each state.
 
@@ -43,14 +43,14 @@ Some miscellaneous readings:
 
    If we fix the policy 𝜋 (which determines how actions are chosen based on states), then MDP reduces to MRP.  
    Now, we need to find the best MRP, i.e. optimize the MDP: Bellman equation, dynamic programming.
-   
+
 2. Model-free approaches:
 
    - Monte Carlo policy.
    - ***Temporal difference.***
    - SARSA.
    - Q-learning.
-  
+
    Among the four methods mentioned above, temporal difference (TD) is considered the most important one (I'm not entirely sure, but I remember the speaker mentioning that Prof. Sutton said so).
 
 3. Function approximation:
